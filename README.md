@@ -1,4 +1,4 @@
-# React Application With Script Html Imports
+# React Application With Script Html Tags
 
 This project was made to test the react environment into script html tags, just for curiosity.
 
