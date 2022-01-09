@@ -16,12 +16,12 @@ function App () {
         e(Route, {
           key: loginPath,
           path: loginPath,
-          element: e(Login)
+          element: e(Login) // <Login /> should work too
         }),
         e(Route, {
           key: listPath,
           path: listPath,
-          element: e(UsersList)
+          element: e(UsersList) // <UsersList /> should work too
         })
       ]))
     ))
