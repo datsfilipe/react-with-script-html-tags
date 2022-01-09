@@ -1,0 +1,116 @@
+/* Login screen styles */
+#login form {
+  max-width: 460px;
+  min-width: 160px;
+  margin: 0 8px;
+  padding: 40px;
+
+  border-radius: 2px;
+  display: flex;  
+  flex-direction: column;
+
+  box-shadow: var(--box-shadow-1);
+}
+
+#login form label + input {
+  margin-bottom: 25px;
+}
+
+#login form label {
+  margin-bottom: 10px;
+  font-size: 16px;
+
+  color: var(--purple-300);
+}
+
+#login form input {
+  padding: 4px 6px;
+  font-size: 15px;
+
+  border-radius: 2px;
+
+  background: var(--white-750);
+  border: 1px solid var(--grey-400);
+  color: var(--foreground);
+}
+
+#login form input:focus-within {
+  outline: 2px solid rgba(21, 79, 165, 0.3);
+}
+
+#login .passwordRecovery {
+  font-size: 15px;
+  margin-bottom: 15px;
+
+  align-self: center;
+
+  color: var(--pink-700);
+}
+
+#login .passwordRecovery a:hover {
+  text-decoration: underline;
+}
+
+#login .loginButton {
+  width: 140px;
+  border: 0;
+  padding: 6px 0;
+
+  align-self: center;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: filter .2s;
+
+  background: var(--pink-200);
+  color: var(--white-750);
+}
+
+#login .loginButton:hover {
+  filter: brightness(.9);
+}
+
+#login .loginButton:active {
+  outline: 3px solid rgba(21, 79, 165, 0.3);
+}
+
+/* Users List screen styles */
+#users-list .table {
+  max-width: 650px;
+  min-width: 260px;
+  width: 100%;
+  margin: 0 8px;
+
+  border-collapse: collapse;
+
+  box-shadow: var(--box-shadow-1);
+}
+
+#users-list thead tr {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 122px 1fr 122px 1fr;
+
+  padding: 27px 40px 13px 40px;
+  border-radius: 4px 4px 0 0;
+
+  background: var(--pink-200);
+  color: var(--white-750);
+}
+
+#users-list thead tr th {
+  margin: 0 auto 0 0;
+}
+
+#users-list tbody tr {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 122px 1fr 122px 1fr;
+
+  padding: 8px 40px 0 40px;
+
+  color: var(--purple-300);
+}
+
+#users-list tbody tr:last-child {
+  padding-bottom: 40px;
+}

@@ -1,0 +1,46 @@
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* color-scheme */
+  --background: #F0EFF4;
+  --foreground: #101010;
+
+  --pink-700: #832161;
+  --pink-200: #DA4167;
+  --purple-300: #3D2645;
+  --white-750: #F0EFF4;
+  --black-750: #101010;
+  --grey-400: #c0c0c0;
+
+  --box-shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body, main {
+  background: var(--background);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem 'Inter', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

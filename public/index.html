@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" type="text/css" href="../src/styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="../src/styles/app.css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <!-- that's were react will act :) -->
+  <div id="root"></div>
+
+  <!-- react + babel script imports -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- history script import -->
+  <script src="https://unpkg.com/history@5/umd/history.development.js" crossorigin></script>
+
+  <!-- react-router-dom script imports -->
+  <script src="https://unpkg.com/react-router@6/umd/react-router.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.development.js" crossorigin></script>
+  
+  <!-- components -->
+  <script type="text/babel" src="../src/App.jsx"></script>
+  <script type="text/babel" src="../src/pages/login.jsx"></script>
+  <script type="text/babel" src="../src/pages/usersList.jsx"></script>
+
+  <!-- basic react script app -->
+  <script type="text/babel">
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
